@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice bord</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="noticeBody">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/fff-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="problem">
+            <a href="#">Problem</a>
+            <a href="#">Support</a>
+        </div>
+    </nav>
+    <section id="notice">
+        <div>
+            <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos laboriosam deleniti consequatur unde repudiandae eos vitae molestiae. Omnis quasi, at repellat ex quod asperiores odio inventore explicabo eos? Perspiciatis at cumque placeat eligendi quia! Excepturi facilis ut ipsum fugiat et, quia ratione optio, qui modi facere perspiciatis necessitatibus? Error, odit natus dignissimos repellendus nulla quasi maiores minima, vel voluptas fugit quidem alias assumenda exercitationem eum ipsa? Ratione laboriosam repudiandae omnis, possimus reiciendis magnam tenetur deserunt, praesentium nisi eum quo unde iusto dolores. Ratione magnam facilis dolores eligendi necessitatibus laborum repudiandae delectus impedit unde quidem atque eaque quam ipsam, harum natus ipsum possimus saepe, deleniti inventore enim. Repudiandae obcaecati aut maxime, voluptatibus enim aliquam consectetur fugit, numquam reprehenderit veniam porro ab aliquid velit minus veritatis. Nulla provident harum nesciunt quo vero facere saepe molestias voluptas similique eaque, praesentium quam alias excepturi totam adipisci? Ea eaque aperiam recusandae minus aut temporibus itaque ipsum eius odit, facere nostrum, sunt maxime illo sapiente cumque suscipit labore sed pariatur fugit minima nulla, cupiditate doloribus mollitia dicta. Nihil accusamus amet quam sunt laudantium facere quae facilis tempore rerum, ex nisi dolorum voluptate. Vitae illo, temporibus dolorum nisi numquam ipsam ad saepe soluta quas, magni a.</marquee>
+            <h4>Notice Bord </h4>
+            <p class="date"></p>
+            <p class="time"></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam temporibus ab soluta enim illum doloribus nam nisi amet, fugit earum id quod asperiores dolorum in architecto. Quia exercitationem, libero fugiat ea culpa iusto qui suscipit vel rerum vitae. Officiis consectetur id pariatur maxime illum incidunt sit ut voluptatem neque at iusto cumque in eligendi dolor provident nihil excepturi natus architecto, vero unde perspiciatis aperiam quaerat quibusdam. Accusantium eum animi sit inventore voluptates officiis ratione, corrupti tenetur consequuntur cum voluptate facere praesentium harum dolore, impedit eveniet atque cumque ducimus nulla, omnis facilis? Aliquam saepe, ipsa corrupti possimus, sapiente alias assumenda repellendus, quos doloremque id optio ratione cupiditate iure quasi cumque eaque quaerat reiciendis modi nihil aliquid minus. Nam modi voluptate totam alias necessitatibus, magnam, nihil tempore accusamus numquam aliquid veniam vero? Odit dolores maiores ipsam, sit exercitationem, rem facilis a consequatur impedit fugit voluptatum et. Distinctio doloremque fugiat quod delectus, similique aut, harum nisi natus recusandae repudiandae tempore quibusdam ullam eius excepturi ab laborum blanditiis sit impedit culpa iure veritatis a asperiores vel magni! Ab, sapiente! Soluta expedita commodi reiciendis recusandae. Quaerat laborum id accusamus voluptatem repudiandae tenetur, deleniti magnam voluptatum. Aliquid iste quo dicta delectus. Consequuntur necessitatibus quam ratione!</p>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        setInterval( function (){     
+        let data = new Date();
+        let  dateHtml = data.toTimeString();
+        let second = data.toDateString()
+        $('.date').html(second);
+        $('.time').html(dateHtml);
+        })
+    </script>
+</body>
+</html>

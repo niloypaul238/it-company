@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width: 100%;
+    background-color: #040b34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px 30px;
+    position: fixed;
+    z-index: 12;
+    filter: drop-shadow(2px 4px 9px white);
+}
+
+.logo{
+    flex-grow: 3;
+}
+.logo img{
+    height: 60px;
+}
+.problem{
+    flex-grow: 1;
+    display: flex;
+    z-index: 1111;
+    justify-content: space-evenly;
+}
+.problem a{
+    text-decoration: none;
+    color: white;
+    background-color: #bc0808;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+.problem a:hover{
+    box-shadow: 1px 1px 9px white;
+}
+main{
+    background: url(img/0130936b2eea1b178b041251c974c013.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+main::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: ;
+    background-color: rgba(0, 0, 0, 0.65)
+}
+
+.blur::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.864)
+}
+.welcome{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: -180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: ;
+}
+.welcome p{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 4px;
+}
+.welcome h3{
+    color: #f2ff00;
+    font-size: 50px;
+}
+.welcome h3 span{
+    color: #ffa200;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.registion{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    position: relative;
+    bottom:-50px ;
+    top:;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+.regLog{
+    text-decoration: none;
+    color: wheat;
+    background-color:  #bc0808 ;
+    padding: 4px 12px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.login , .rege{
+    position: absolute;
+    background-color: #050505e7;
+    width: 300px;
+    padding: 0px 10px 20px;
+    z-index: 11;
+    right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+
+}
+.heading h3{
+    color: red;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.input{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    float: left;
+    color: white;
+    width: 100%;
+
+    border-bottom: 1px solid rgba(245, 222, 179, 0.477);
+}
+.input input{
+    width: 100%;
+    border: 0px;
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+
+}
+.crose{
+    position: relative;
+    padding: 20px;
+}
+.crose i{
+    position: absolute;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+form button{
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 0px;
+}
+.social a{
+    background-color: #c20606;
+    color: white;
+    padding: 4px 9px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.social a::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: 0.2s;
+    z-index: -1;
+}
+.social a:hover{
+    color: red;
+}
+.social a:hover::before{
+    transform: translateX(0%);
+}
+
+
+
+#rules{
+    position: absolute;
+    background-color: #fff;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 7;
+    padding:0px 10px 5px;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-top:-4000px ;
+
+}
+
+#rules .img img{
+    width: 60px;
+}
+#rules .img{
+    text-align: center;
+}
+ul li h3{
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid red;
+    font-size: 10px;
+}
+.rulesCrose{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    color: red;
+}
+ul li p{
+    font-size: 10px;
+}
+ul li h3 img{
+    width: 30px;
+}
+ul li{
+    list-style: none;
+}
+
+
+
+
+/*notice border css code start*/
+
+#noticeBody{
+    background-color: #050a2a;
+}
+
+#notice div{
+    background-color: #fff;
+    padding: 0px 80px 30px;
+    width: 80%;
+    margin: 0px auto;
+
+}
+#notice{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#notice div h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0px 0px 14px 0px;
+    position: relative;
+    width: 200px;
+    margin: auto;
+
+}
+#notice div h4 marquee{
+    padding: 10px 0px 20px ;
+}
+#notice div h4::before{
+    content: '';
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 2px;
+    right: 2px;
+}
+.time{
+    padding: 0px 0px 10px;
+}
+.date{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/*Project code css start*/
+#project{
+    padding-top: 80px;
+}
+#project div h4{
+    color: rgb(255, 255, 255);
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: ;
+    border: 1px solid black;
+    background-color: #040b34;
+    padding: 10px 4px;
+}
+
+
+#project .bio table{
+    width: 300px;
+}
+#project .bio table tr th{
+    text-align: start;
+}
+.projectPost{
+    width: 50%;
+    margin: 40px auto;
+    box-shadow: 2px 3px 9px black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projectPost p{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(32, 13, 51);
+    color: white;
+}
+.projectDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projectDiv div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+.projectDiv div input, textarea{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+
+
+/*social mediea */
+#SocialAlert{
+    width: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: px;
+    border-radius: 50px;
+    padding: 40px;
+    z-index: 1111111;
+    display: ;
+    left: -400px;
+}
+#SocialAlert p{
+    padding: 10px;
+}
+.socialDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.socialDiv a img{
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 4px;
+}
+.socialBtn{
+    margin: auto;
+    width: 100px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* jquery class */
+.activer{
+    background-color: white;
+    color: red;
+}
